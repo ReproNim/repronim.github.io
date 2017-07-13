@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Agency v3.3.7+1 (http://startbootstrap.com/template-overviews/agency)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 body {
@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-color: #222222;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -311,6 +311,7 @@ section h3.section-subheading {
   position: relative;
   max-width: 400px;
   margin: 0 auto;
+  color: black;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
   background: rgba(254, 209, 54, 0.9);
@@ -555,7 +556,6 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
