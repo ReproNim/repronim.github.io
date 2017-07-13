@@ -1,127 +1,480 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Crnc.GitHub.io : ">
+<head>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/hypothesis.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <script type="text/javascript" src="javascripts/hypothesis.js"></script>
+    <title>ReprNim - Center for Reproducible Neuroimaging Computation</title>
 
-    <title>ReproNim: A Center for Reproducible Neuroimaging Computation</title>
-  </head>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <body>
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/ReproNim">View on GitHub</a>
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
 
-          <h1 id="project_title">ReproNim: A Center for Reproducible Neuroimaging Computation
-          <h2 id="project_tagline">(Discover, Replicate, Innovate)<sup style="vertical-align:super">Repeat</sup></h2>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/hypothesis.css">
+    <script type="text/javascript" src="js/hypothesis.js"></script>
 
-        </header>
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">ReproNim</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#intro">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#training">Training</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#news">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">A Center for Reproducible Neuroimaging Computation</div>
+                <div class="intro-lead-in">(Discover, Replicate, Innovate)<sup>Repeat</sup></div>
+                <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Welcome to ReproNim!</h2>
+                    <h3 class="section-subheading text-muted text-justify">The Center for Reproducible Neuroimaging Computation, seeks to implement a shift in the way neuroimaging research is performed and reported. Through the development and implementation of a FAIR (Findable, Accessible, Interoperable and Reusable, Wilkinson et al., 2016) technology stack that supports a comprehensive set of data management, analysis, and utilization frameworks in support of both basic research and clinical activities, our overarching goal is to improve the reproducibility of neuroimaging science and extend the value of our national investment in neuroimaging research. Reproducibility is critical because the current literature is fraught with published results that are due to mistakes or turn out to be false positive (contributed to by the lack of statistical power). More importantly, given the current publication system, it is exceedingly difficult to discern between false positive and true positive finding as data is hard to aggregate, and exact methods are hard to replicate.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Projects</h2>
+                    <h3 class="section-subheading text-muted">Technology and Resource Development</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Data Discovery</h4>
+                    <p class="text-muted text-justify">In this project, we will integrate existing successful community platforms, extend existing data and search services, and develop new search and discovery tools to create a sophisticated, comprehensive, and dynamic search environment for working with distributed neuroimaging data, tools, workflows, and execution environments. This work will support users in discovery and also assist the end user with a specific analytic goal in finding the appropriate available data and software that can subsequently be submitted to the specified workflows and local or cloud-based execution environments.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Data Modeling and Integration</h4>
+                    <p class="text-muted text-justify">The primary aims of this project will be to provide a consistent and extensible data model for communicating information in brain imaging, associated software tools, and to provide a set of commonly used reproducible workflows with integrated provenance tracking to facilitate such communication. These tools need to be easy to use, supported, and documented. The workflows need to be validated and ideally be executable on infrastructure available to researchers. The workflows must also generate queryable results using standardized data models that are essential to allow software and people to communicate and interpret data precisely.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Execution Environments</h4>
+                    <p class="text-muted text-justify">The goal of this project is to enable reproducible computation through full automation and thus tracking of origins of the computing environments. The result will be a NeuroImaging Computation Environments MANager (NICEMAN). The aim of this project is to support the easy and reproducible execution of neuroimaging analysis workflows on a variety of computational platforms while efficiently reusing and integrating existing free and open source software products and data sharing initiatives. Execution of workflows will be achieved by automatically creating computation environments where necessary software and datasets are available for computation, executing the workflow(s), and returning results and detailed provenance information about the environment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="training" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Training</h2>
+                    <h3 class="section-subheading text-muted text-justify">Our objectives are to provide the brain imaging community with online training materials based on the concepts and software developed by the center. We want to conduct training workshops to teach the fundamentals of reproducible neuroimaging and to use center resources and tools effectively. In particular, we aim at providing researchers and clinicians with the k now­how t o integrate a full cycle of research: hypothesis testing, data and software discovery, finding and adapting "playbooks" or pipelines, allowing provenance tracking and results discovery, and reproducible computations. This training will cultivate a clear understanding of the concepts, assumptions, and limitations underlying the reproducible research automation tools.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4 class="text-danger">Repronim Intro</h4>
+                                <p class="text-muted"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4 class="text-danger">Reproducibility Basics</h4>
+                                <p class="text-muted"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4 class="text-danger">FAIR Data</h4>
+                                <p class="text-muted"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4 class="text-danger">Data Processing</h4>
+                                <p class="text-muted"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <h4 class="text-danger">Statistics</h4>
+                                <p class="text-muted"></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">ReproNim stream</h2>
+                    <h3 class="section-subheading text-muted">Automated tags from hypothes.is</h3>
+                </div>
+            </div>
+            <div class="row text-center text-danger">
+                <div class="col-md-4">
+                    <h4 class="service-heading">Training resources</h4>
+                    <div class="hypothesis-feed"
+                       data-hypothesis-tag="ReproNim:Training"
+                       data-hypothesis-loading="Loading..."
+                       data-hypothesis-none="No traning annotations."
+                       data-hypothesis-error="Error loading training annotations.">Unable to load training annotations.
+                   </div>
+                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:Training">See all</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Related Literature</h4>
+                    <div class="hypothesis-feed"
+                       data-hypothesis-tag="ReproNim:RelatedLiterature"
+                       data-hypothesis-loading="Loading..."
+                       data-hypothesis-none="No traning annotations."
+                       data-hypothesis-error="Error loading training annotations.">Unable to load related literature.
+                   </div>
+                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:RelatedLiterature">See all</a></p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="service-heading">Events</h4>
+                    <div class="hypothesis-feed"
+                       data-hypothesis-tag="ReproNim:Event"
+                       data-hypothesis-loading="Loading..."
+                       data-hypothesis-none="No traning annotations."
+                       data-hypothesis-error="Error loading training annotations.">Unable to load events.
+                   </div>
+                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:Event">See all</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">info@reproducibleimaging.org</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; ReproNim 2017</span>
+                </div>
+                <!--
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>ReproNim Intro</h2>
+                                <iframe width="100%"  height="600px" src="http://www.reproducibleimaging.org/module-intro/reference/"></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to ReproNim!</h3>
-
-<p>
-The Center for Reproducible Neuroimaging Computation, seeks to implement a shift in the way neuroimaging research is performed and reported. Through the development and implementation of a FAIR (Findable, Accessible, Interoperable and Reusable, <a href="http://www.nature.com/articles/sdata201618">Wilkinson et al., 2016</a>) technology stack that supports a comprehensive set of data management, analysis, and utilization frameworks in support of both basic research and clinical activities, our overarching goal is to improve the reproducibility of neuroimaging science and extend the value of our national investment in neuroimaging research. Reproducibility is critical because the current literature is fraught with published results that are due to mistakes or turn out to be false positive (contributed to by the lack of statistical power). More importantly, given the current publication system, it is exceedingly difficult to discern between false positive and true positive finding as data is hard to aggregate, and exact methods are hard to replicate.
-</p>
-
-<h3>
-<a id="designer-templates" class="anchor" href="#designer-templates" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Discovery</h3>
-
-<p>
-In this project, we will integrate existing successful community platforms, extend existing data and search services, and develop new search and discovery tools to create a sophisticated, comprehensive, and dynamic search environment for working with distributed neuroimaging data, tools, workflows, and execution environments. This work will support users in discovery and also assist the end user with a specific analytic goal in finding the appropriate available data and software that can subsequently be submitted to the specified workflows and local or cloud-based execution environments.
-</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Data Modeling and Integration</h3>
-
-<p>
-The primary aims of this project will be to provide a consistent and extensible data model for communicating information in brain imaging, associated software tools, and to provide a set of commonly used reproducible workflows with integrated provenance tracking to facilitate such communication. These tools need to be easy to use, supported, and documented. The workflows need to be validated and ideally be executable on infrastructure available to researchers. The workflows must also generate queryable results using standardized data models that are essential to allow software and people to communicate and interpret data precisely.
-</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Execution Environments</h3>
-
-<p>
-The goal of this project is to enable reproducible computation through full automation and thus tracking of origins of the computing environments. The result will be a NeuroImaging Computation Environments MANager (NICEMAN). The aim of this project is to support the easy and reproducible execution of neuroimaging analysis workflows on a variety of computational platforms while efficiently reusing and integrating existing free and open source software products and data sharing initiatives. Execution of workflows will be achieved by automatically creating computation environments where necessary software and datasets are available for computation, executing the workflow(s), and returning results and detailed provenance information about the environment.
-</p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Training and Dissemination</h3>
-        <a href="http://www.reproducibleimaging.org/module-intro/">View our training modules (still under development)</a>
-<p>
-Our objectives are to provide the brain imaging community with online training materials based on the concepts and software developed by the center. We want to conduct training workshops to teach the fundamentals of reproducible neuroimaging and to use center resources and tools effectively. In particular, we aim at providing researchers and clinicians with the k now­how t o integrate a full cycle of research: hypothesis testing, data and software discovery, finding and adapting "playbooks" or pipelines, allowing provenance tracking and results discovery, and reproducible computations. This training will cultivate a clear understanding of the concepts, assumptions, and limitations underlying the reproducible research automation tools.
-</p>
-
-<h4>Training annotations</h4>
-
-    <div class="hypothesis-feed" data-hypothesis-tag="ReproNim:Training"
-                                 data-hypothesis-loading="Loading..."
-                                 data-hypothesis-none="No traning annotations."
-                                 data-hypothesis-error="Error loading training annotations.">
-        Unable to load training annotations.
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Reproducibility Basics</h2>
+                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-reproducible-basics/reference/"></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<p><a href="https://hypothes.is/stream?q=tag:ReproNim:Training">See all</a></p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Related Literature</h3>
-
-    <div class="hypothesis-feed" data-hypothesis-tag="ReproNim:RelatedLiterature"
-                                 data-hypothesis-loading="Loading..."
-                                 data-hypothesis-none="No related literature."
-                                 data-hypothesis-error="Error loading related literature.">
-        Unable to load related literature.
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>FAIR Data</h2>
+                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-FAIR-data/reference/"></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<p><a href="https://hypothes.is/stream?q=tag:ReproNim:RelatedLiterature">See all</a></p>
-
-<h3>
-<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Events</h3>
-
-    <div class="hypothesis-feed" data-hypothesis-tag="ReproNim:Event"
-                                 data-hypothesis-loading="Loading..."
-                                 data-hypothesis-none="No events."
-                                 data-hypothesis-error="Error loading events.">
-        Unable to load events.
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>FAIR Data</h2>
+                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-dataprocessing/reference/"></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-<p><a href="https://hypothes.is/stream?q=tag:ReproNim:Event">See all</a></p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
-
-<p>For more information, contact <a href="mailto:info@reproducibleimaging.org">info@reproducibleimaging.org</a>.</p>
-
-<h3>
-<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support</h3>
-
-<p>ReproNim is supported by <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8999833&icde=29244418&ddparam=&ddvalue=&ddsub=&cr=7&csb=default&cs=ASC">NIH-NIBIB P41 EB019936</a>.</p>
-      </section>
+    <!-- Portfolio Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>FAIR Data</h2>
+                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-stats/reference/"></iframe>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
     <script type="text/javascript">
     h_activate_feeds();
     </script>
 
-  </body>
+</body>
+
 </html>
