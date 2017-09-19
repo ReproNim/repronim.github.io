@@ -64,9 +64,6 @@
                         <a class="page-scroll" href="#training">Training</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#news">News</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -91,9 +88,17 @@
     <section id="intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Welcome to ReproNim!</h2>
-                    <h3 class="section-subheading text-muted text-justify">The Center for Reproducible Neuroimaging Computation (ReproNim), seeks to implement a shift in the way neuroimaging research is performed and reported. Through the development and implementation of a FAIR (Findable, Accessible, Interoperable and Reusable, <a class="text-danger" href="http://www.nature.com/articles/sdata201618" target="_blank">Wilkinson et al., 2016</a>) technology stack that supports a comprehensive set of data management, analysis, and utilization frameworks in support of both basic research and clinical activities, our overarching goal is to improve the reproducibility of neuroimaging science and extend the value of our national investment in neuroimaging research. Reproducibility is critical because the current literature is fraught with published results that are due to mistakes or turn out to be false positive (contributed to by the lack of statistical power). More importantly, given the current publication system, it is exceedingly difficult to discern between false positive and true positive finding as data is hard to aggregate, and exact methods are hard to replicate.</h3>
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">Welcome to ReproNim!</h2>
+                    <p>The goal of ReproNim is to help neuroimaging researchers to:</p>
+                    <ul>
+                        <li>Find and Share data in a <a class="text-danger" href="http://www.nature.com/articles/sdata201618">FAIR</a> fashion (discover)</li>
+                        <li>Comprehensively describe their data and analysis workflows (describe), and</li>
+                        <li>Manage their computational resource options (do)</li>
+                    </ul>
+                    <p>so that the outcomes of neuroimaging research are more reproducible.</p>
+
+                    <p>Achieving these goals requires both technical development of readily accessible, user-friendly computational services (discover, describe, and do functions) that can be readily integrated into current research practices, and broad educational outreach about reproducibility (teach) to the neuroimaging community at large including developers as well as applied researchers across basic sciences and clinical disciplines.</p>
                 </div>
             </div>
         </div>
@@ -108,31 +113,50 @@
                     <h3 class="section-subheading text-muted">Technology and Resource Development</h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class="row">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Data Discovery</h4>
-                    <p class="text-muted text-justify">In this project, we will integrate existing successful community platforms, extend existing data and search services, and develop new search and discovery tools to create a sophisticated, comprehensive, and dynamic search environment for working with distributed neuroimaging data, tools, workflows, and execution environments. This work will support users in discovery and also assist the end user with a specific analytic goal in finding the appropriate available data and software that can subsequently be submitted to the specified workflows and local or cloud-based execution environments.</p>
+                    <div class="text-center">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading text-center">Discover</h4>
+                    </div>
+                    <div>
+                        <p>There are two broad classes of product we envision:</p>
+                        <ul>
+                            <li>Tools to help researchers Publish their data</li>
+                            <li>Tools to help researchers Discover published data.</li>
+                        </ul>
+                        <p>These tools are designed to integrate across the network of data hosting facilities to facilitate data sharing, use, and discovery.</p>
+                    </div>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Data Modeling and Integration</h4>
-                    <p class="text-muted text-justify">The primary aims of this project will be to provide a consistent and extensible data model for communicating information in brain imaging, associated software tools, and to provide a set of commonly used reproducible workflows with integrated provenance tracking to facilitate such communication. These tools need to be easy to use, supported, and documented. The workflows need to be validated and ideally be executable on infrastructure available to researchers. The workflows must also generate queryable results using standardized data models that are essential to allow software and people to communicate and interpret data precisely.</p>
+                    <div class="text-center">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading text-center">Describe</h4>
+                    </div>
+                    <div>
+                        <p>While images often "know" their metadata, it is up to the researcher to manage the extra information about the subject of the data, the experiment, and the analysis. ReproNim is developing a tool that helps researchers manage, track and transmit information in a comprehensive format.</p>
+                    </div>
                 </div>
+
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Execution Environments</h4>
-                    <p class="text-muted text-justify">The goal of this project is to enable reproducible computation through full automation and thus tracking of origins of the computing environments. The result will be a NeuroImaging Computation Environments MANager (NICEMAN). The aim of this project is to support the easy and reproducible execution of neuroimaging analysis workflows on a variety of computational platforms while efficiently reusing and integrating existing free and open source software products and data sharing initiatives. Execution of workflows will be achieved by automatically creating computation environments where necessary software and datasets are available for computation, executing the workflow(s), and returning results and detailed provenance information about the environment.</p>
+                    <div class="text-center">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading text-center">Do</h4>
+                    </div>
+                    <div>
+                        <p>Researchers have many computational options for performing their analysis (Desktop, HPC, cloud, etc.). ReproNim is developing solutions that lets users select, describe and transmit their computational solutions along with their results. In addition, given a computational description, ReproNim tools can enable precise re-creation of a described environment.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -141,9 +165,10 @@
     <section id="training" class="bg-light-gray">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Training</h2>
-                    <h3 class="section-subheading text-muted text-justify">Our objectives are to provide the brain imaging community with online training materials based on the concepts and software developed by the center. We want to conduct training workshops to teach the fundamentals of reproducible neuroimaging and to use center resources and tools effectively. In particular, we aim at providing researchers and clinicians with the k now­how t o integrate a full cycle of research: hypothesis testing, data and software discovery, finding and adapting "playbooks" or pipelines, allowing provenance tracking and results discovery, and reproducible computations. This training will cultivate a clear understanding of the concepts, assumptions, and limitations underlying the reproducible research automation tools.</h3>
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-center">Teach</h2>
+                    <p>Our Educational Objectives include topical training in the overall topics of issues that affect the reproducibility of neuroimaging research (data acquisition and characterization, experimental methods, analyses, record keeping and reporting, reusability, and sharing of data and methods) development of a next-generation cadre of software developers that are versed in the techniques that promote reproducibility and education of the neuroimaging researcher in the tools that promote complete experimental description.</p>
+                    <p>Our initial (Phase 1) curriculum focuses on the developer in order to initiate a set of tools that are reproducibility-enabled. Future curricula will extend the reach of these materials to encompass a broader community of researchers.</p>
                 </div>
             </div>
             <div class="row">
@@ -196,50 +221,6 @@
                             </div>
                         </div>
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="news">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">ReproNim stream</h2>
-                    <h3 class="section-subheading text-muted">Automated tags from hypothes.is</h3>
-                </div>
-            </div>
-            <div class="row text-center text-danger">
-                <div class="col-md-4">
-                    <h4 class="service-heading">Training resources</h4>
-                    <div class="hypothesis-feed"
-                       data-hypothesis-tag="ReproNim:Training"
-                       data-hypothesis-loading="Loading..."
-                       data-hypothesis-none="No traning annotations."
-                       data-hypothesis-error="Error loading training annotations.">Unable to load training annotations.
-                   </div>
-                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:Training">See all</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="service-heading">Related Literature</h4>
-                    <div class="hypothesis-feed"
-                       data-hypothesis-tag="ReproNim:RelatedLiterature"
-                       data-hypothesis-loading="Loading..."
-                       data-hypothesis-none="No traning annotations."
-                       data-hypothesis-error="Error loading training annotations.">Unable to load related literature.
-                   </div>
-                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:RelatedLiterature">See all</a></p>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="service-heading">Events</h4>
-                    <div class="hypothesis-feed"
-                       data-hypothesis-tag="ReproNim:Event"
-                       data-hypothesis-loading="Loading..."
-                       data-hypothesis-none="No traning annotations."
-                       data-hypothesis-error="Error loading training annotations.">Unable to load events.
-                   </div>
-                    <p class="text-muted"><a class="text-danger" href="https://hypothes.is/stream?q=tag:ReproNim:Event">See all</a></p>
                 </div>
             </div>
         </div>
