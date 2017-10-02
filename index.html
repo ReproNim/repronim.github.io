@@ -1,423 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Design4Profit</title>
 
-<head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/ionicons.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/style.css">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>ReproNim - Center for Reproducible Neuroimaging Computation</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
-    <![endif]-->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/hypothesis.css">
-    <script type="text/javascript" src="js/hypothesis.js"></script>
-
-</head>
-
-<body id="page-top" class="index">
-
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">ReproNim</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#intro">Home</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#training">Training</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact2">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">ReproNim: A Center for Reproducible Neuroimaging Computation</div>
-                <div class="intro-lead-in">(Discover, Replicate, Innovate)<sup>Repeat</sup></div>
-                <a href="#intro" class="page-scroll btn btn-xl">Tell Me More</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Services Section -->
-    <section id="intro" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 lead">
-                    <h2 class="section-heading text-center">Welcome to ReproNim!</h2>
-                    <div>The goal of ReproNim is to help neuroimaging researchers to:</div>
-                    <ul>
-                        <li>Find and Share data in a <a class="text-danger" href="http://www.nature.com/articles/sdata201618">FAIR</a> fashion (discover)</li>
-                        <li>Comprehensively describe their data and analysis workflows (describe), and</li>
-                        <li>Manage their computational resource options (do)</li>
-                    </ul>
-                    <div>so that the outcomes of neuroimaging research are more reproducible.</div>
-
-                    <div>Achieving these goals requires both technical development of readily accessible, user-friendly computational services (discover, describe, and do functions) that can be readily integrated into current research practices, and broad educational outreach about reproducibility (teach) to the neuroimaging community at large including developers as well as applied researchers across basic sciences and clinical disciplines.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Projects</h2>
-                    <h3 class="section-subheading text-muted">Technology and Resource Development</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading text-center">Discover</h4>
-                    </div>
-                    <div>
-                        <p>There are two broad classes of product we envision:</p>
-                        <ul>
-                            <li>Tools to help researchers Publish their data</li>
-                            <li>Tools to help researchers Discover published data.</li>
-                        </ul>
-                        <p>These tools are designed to integrate across the network of data hosting facilities to facilitate data sharing, use, and discovery.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading text-center">Describe</h4>
-                    </div>
-                    <div>
-                        <p>While images often "know" their metadata, it is up to the researcher to manage the extra information about the subject of the data, the experiment, and the analysis. ReproNim is developing a tool that helps researchers manage, track and transmit information in a comprehensive format.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="text-center">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading text-center">Do</h4>
-                    </div>
-                    <div>
-                        <p>Researchers have many computational options for performing their analysis (Desktop, HPC, cloud, etc.). ReproNim is developing solutions that lets users select, describe and transmit their computational solutions along with their results. In addition, given a computational description, ReproNim tools can enable precise re-creation of a described environment.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="training" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading text-center">Teach</h2>
-                    <p>Our Educational Objectives include:</p>
-                    <ul>
-                    <li>Topical training in the overall issues that affect the reproducibility of neuroimaging research (data acquisition and characterization, experimental methods, analyses, record keeping and reporting, reusability, and sharing of data and methods)</li>
-                    <li>Development of a next-generation cadre of software developers that are versed in the techniques that promote reproducibility and education of the neuroimaging researcher in the tools that promote complete experimental description.</li>
-                    </ul>
-                    <p>Our initial (Phase 1) curriculum focuses on the developer in order to initiate a set of tools that are reproducibility-enabled. Future curricula will extend the reach of these materials to encompass a broader community of researchers.</p>
-                    <p><b>Note:</b> There will be a Reproducible Neuroimaging Training Workshop held just prior to the Society for Neuroscience meeting in Washington DC, November 10-11, 2017. See <a href="https://tinyurl.com/repronim-sfn17">https://tinyurl.com/repronim-sfn17</a> for more details.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <h4 class="text-danger">Repronim Intro</h4>
-                                <p class="text-muted"></p>
+        <!-- font -->
+        <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet'>
+        <link rel="stylesheet" href="font/font.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <section class="section-1">
+                <div class="container">
+                    <header class="site-header">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-8">
+                                <h1 class="logo"><a href="index.html">Design4Profit</a></h1>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <h4 class="text-danger">Reproducibility Basics</h4>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <h4 class="text-danger">FAIR Data</h4>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <h4 class="text-danger">Data Processing</h4>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <h4 class="text-danger">Statistics</h4>
-                                <p class="text-muted"></p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+                            <div class="col-sm-8 col-xs-4">
+                                <nav class="navbar pull-right" role="navigation">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="ion-navicon"></span>
+                                    </button>
 
-    <!-- Contact Section -->
-    <section id="contact2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <p><b>Email us</b> at <a href="mailto:info@reproducibleimaging.org">info@reproducibleimaging.org</a></p>
-                    <p><b>Read our blog</b> at <a href="https://repronim.wordpress.com/">https://repronim.wordpress.com/</a></p>
-                    <p><b>Find us on Twitter</b> at <a href="https://twitter.com/repronim">@ReproNim</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="team.html">Our Team</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                        </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </nav>
+                            </div>
+                        </div>  <!-- row -->
+                    </header>   <!-- site header -->
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; ReproNim 2016-2017</span>
-                </div>
-                <div class="col-md-4">
-                    <ul class="list-inline quicklinks">
-                    <li><b>Support</b>: <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8999833" target="_blank">NIH-NIBIB P41 EB019936</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
+                    <h1 class="promo-text">We Design Websites That Are Guaranteed To Make You Money</h1>
+                    <div class="CTA text-center">
+                        <a href="http://technextit.com/" class="btn-CTA">Find More</a></button>
                     </div>
                 </div>
+            </section>
+            
+            <section class="section-2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>ReproNim Intro</h2>
-                                <a type="button" class="btn btn-primary" target="_blank" href="http://www.reproducibleimaging.org/module-intro/"><i class="fa fa-times"></i> Open in New Window</a>
-                                <iframe width="100%"  height="600px" src="http://www.reproducibleimaging.org/module-intro/reference/"></iframe>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        <div class="col-md-1">
+                            <div class="icon-holder icon-holder-1">
+                                <span class="ion-ios7-people-outline"></span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
+                        <div class="col-md-11">
+                             <p class="feature">We are design4profit, design websites for Internet Marketers, Entrepreneurs who want to grow their business Online. We are a bunch of Young, Restless &amp; Creative people who always passionate about their job by implementing Industry's best tools, technologies &amp; practices.</p>
                         </div>
-                    </div>
+                    </div>  <!-- row -->
+
+                    <div class="row">
+                        <div class="col-md-1">
+                            <div class="icon-holder icon-holder-2">
+                                <span class="ion-ios7-search"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-11">
+                             <p class="feature">Our mission is to provide the best possible solution to Internet marketers and entrepreneurs who want Web design solution within the budget. And that's why we don't avail every other average opportunity that comes in our way because we don't like the word "compromise" . Repeat business and long term relationship is very important and we strive to maintain that.</p>
+                        </div>
+                    </div>  <!-- row -->
+
+                    <div class="row">
+                        <div class="col-md-1">
+                            <div class="icon-holder icon-holder-3">
+                                <span class="ion-ios7-cloudy-night-outline"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-11">
+                             <p class="feature feature-last">We realize that most website designers that most people work with disappear after a few months or years of working with you, but you won't ever have to worry about that from us or our business. In fact we have our business set up in a way that not only you can contact us whenever, We will also send you a monthly email to check with you and make sure that the work we did on your website is still what you need for your business.</p>
+                        </div>
+                    </div>  <!-- row -->
                 </div>
+            </section>  <!-- section-2 -->
+
+            <section class="section-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Reproducibility Basics</h2>
-                                <a type="button" class="btn btn-primary" target="_blank" href="http://www.reproducibleimaging.org/module-reproducible-basics/"><i class="fa fa-times"></i> Open in New Window</a>
-                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-reproducible-basics/reference/"></iframe>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        <div class="col-md-12">
+                            <header class="section-header">Testimonials</header>
+                            <div class="owl-carousel">
+                                <div class="slider-item">
+                                    <figure class="testimonial-img">
+                                        <img src="image/Doug Hudiburg.jpg">
+                                    </figure>
+                                    <blockquote>The Technext team is absolutely critical to my business. They work as an extension of my team and are always ready to jump in and take tasks as they are assigned to them. Most of all, they are great people… very dedicated to making sure their clients are happy and get the results they want and need. Technext is my go-to resource for programming and technical skills.</blockquote>
+                                    <h1 class="client-name">Doug Hudiburg</h1>
+                                    <span class="client-designation">President, HME Interactive</span>
+                                </div>
+                                <div class="slider-item">
+                                    <figure class="testimonial-img">
+                                        <img src="image/Dwaynne Villiers.jpg" alt="Dwaynne Villiers">
+                                    </figure>
+                                    <blockquote>We have only embarked on three projects with the Technext team so far, but they really outdid themselves with this initial delivery. Friendly, knowledgeable, consistently sought clarification, dedicated to delivering a proper solution, result-oriented. We are already in talks to undertake more projects and are strongly considering them as an extension of our technical team.</blockquote>
+                                    <h1 class="client-name">Dwaynne Villiers</h1>
+                                    <span class="client-designation">Managing Director at VIRB Limited</span>
+                                </div>
+                                <div class="slider-item">
+                                    <figure class="testimonial-img">
+                                        <img src="image/Nathan Devine.jpg" alt="Nathan Devine">
+                                    </figure>
+                                    <blockquote>Fantastic work. Technext team made all changes and followed the brief exactly. They are dedicated to getting to the job complete.</blockquote>
+                                    <h1 class="client-name">Nathan Devine</h1>
+                                    <span class="client-designation">Australia</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </section>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
+            <div class="section-4">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>FAIR Data</h2>
-                                <a type="button" class="btn btn-primary" target="_blank" href="http://www.reproducibleimaging.org/module-FAIR-data/"><i class="fa fa-times"></i> Open in New Window</a>
-                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-FAIR-data/reference/"></iframe>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
+                        <div class="col-md-12">
+                            <a href="http://theunforgettablechallenge.com/" target="_blank"><img alt="The Unforgettable Challenge" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/ufc.png"></a>
+                            <a href="http://www.pilatesonlineacademy.com/" target="_blank"><img alt="Pilates Online Academy" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/poa.png"></a>
+                            <a href="http://www.tripadvisor.co.uk/Restaurant_Review-g186291-d4892078-Reviews-Momo_s_Grill_Seafood_Restaurant-Stroud_Cotswolds_Gloucestershire_England.html" target="_blank"><img alt="Momo's Grill &amp; Seafood Restaurant" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/momos.png"></a>
+                            <a href="http://gymlongueuil.ca/" target="_blank"><img alt="Centre Orion" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/centre-orion.png"></a>
+                            <a href="http://bo-po.com/" target="_blank"><img alt="BO-PO" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/bopo.png"></a>
+                            <a href="http://www.cliniquedentairedegeneve.ch/" target="_blank"><img alt="Clinique Dentaire de Gen&#232;ve - Accueil" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/dl.png"></a>
+                            <a href="http://www.sfdistribution.ca/" target="_blank"><img alt="SF Distribution" src="http://technextit.com/wp-content/themes/technext/images/clients/logo/sf.png"></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
+            <footer class="site-footer">
+                <div class="copyright">
+                    &copy; 2014 themewagon.com
                 </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Data Processing</h2>
-                                <a type="button" class="btn btn-primary" target="_blank" href="http://www.reproducibleimaging.org/module-dataprocessing/"><i class="fa fa-times"></i> Open in New Window</a>
-                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-dataprocessing/reference/"></iframe>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+            </footer>
+        </div>  <!-- wrapper -->
 
-    <!-- Portfolio Modal 5 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Statistics</h2>
-                                <a type="button" class="btn btn-primary" target="_blank" href="http://www.reproducibleimaging.org/module-stats/"><i class="fa fa-times"></i> Open in New Window</a>
-                                <iframe width="100%" height="600px" src="http://www.reproducibleimaging.org/module-stats/reference/"></iframe>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
-
-    <script type="text/javascript">
-    h_activate_feeds();
-    </script>
-
-</body>
-
+        <!-- js -->
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.owl-carousel').owlCarousel({
+                    loop:true,
+                    margin:10,
+                    autoplay:true,
+                    autoplayTimeout:3000,
+                    autoplayHoverPause:true,
+                    responsiveClass:true,
+                    responsive:{
+                            0:{
+                                items:1,
+                            },
+                            600:{
+                                items:1,
+                            },
+                            1000:{
+                                items:1,
+                            }
+                    }
+                })
+            });
+        </script>
+        
+    </body>
 </html>
