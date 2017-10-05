@@ -23,7 +23,19 @@ a, a:active, a:focus, a:hover {outline: none;}
 	margin: 0;
 }
 
-.section-1 {background-color: #0093AF;}
+.section-1 header {background-color: #43b5e8;}
+
+.section-1 {
+    background-color: #ffffff;
+}
+
+.section-1 h1 {
+    color: #43b5e8;
+}
+
+.section-1 img {
+    float: left;
+}
 
 .site-header {
 	padding-top: 30px;
@@ -143,7 +155,7 @@ margin-bottom: 50px;
 }
 
 .section-3 {
-background-color: #0093AF;
+background-color: #43b5e8;
 padding: 90px 0 100px 0;
 text-align: center;
 }
@@ -308,7 +320,7 @@ label span {
 }
 
 #contact-form .btn-submit {
-	background-color: #0093AF;
+	background-color: #43b5e8;
 	border: none;
 	text-align: center;
 	width: 100%;
