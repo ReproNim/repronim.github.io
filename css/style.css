@@ -23,10 +23,8 @@ a, a:active, a:focus, a:hover {outline: none;}
 	margin: 0;
 }
 
-.section-1 header {background-color: #43b5e8;}
-
 .section-1 {
-    background-color: #ffffff;
+    background-color: #43b5e8;
 }
 
 .section-1 h1 {
