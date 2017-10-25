@@ -15,7 +15,11 @@ a, a:active, a:focus, a:hover {outline: none;}
 	background-color: rgba(238, 238, 238, 0);
 }
 
-.navbar {margin: 0; border: 0; border-radius: 0;}
+.navbar {
+    margin: 0;
+    border: 0;
+    border-radius: 0;
+}
 
 .navbar-toggle {
 	padding: 0;
@@ -23,12 +27,16 @@ a, a:active, a:focus, a:hover {outline: none;}
 	margin: 0;
 }
 
-.section-1 {
+.section-1 header {
     background-color: #43b5e8;
 }
 
-.section-1 h1 {
-    color: #43b5e8;
+.section-1 {
+    background-color: #fff;
+}
+
+.section-1 img {
+    float: left;
 }
 
 .section-1 img {
@@ -85,7 +93,7 @@ a, a:active, a:focus, a:hover {outline: none;}
 	margin: 70px 0 40px 0;
 	font-size: 54px;
 	letter-spacing: -1.5px;
-	color: #fff;
+    color: #43b5e8;
 }
 
 .CTA {
