@@ -1,3 +1,10 @@
+/* to do: remove to-do! */
+.to-do {
+    border: 2px solid #f00;
+    color: #f00;
+    width: 200px;
+}
+
 body {
 	font-family: "proxima-nova", sans-serif;
 	font-weight: 400;
