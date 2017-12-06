@@ -62,6 +62,10 @@ section {
     padding-top: 70px;
 }
 
+.section-2 img {
+    width: 100%;
+}
+
 #p-our-team .site-header,
 #p-contact .site-header {
     padding-top: 10px;
