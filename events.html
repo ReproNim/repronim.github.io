@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Events - ReproNim</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- font -->
+        <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet'>
+        <link rel="stylesheet" href="font/font.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <section class="section-1">
+                <header class="site-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4 col-xs-8">
+                                <h1 class="logo"><a href="index.html">ReproNim</a></h1>
+                            </div>
+                            <div class="col-sm-8 col-xs-4">
+                                <nav class="navbar pull-right" role="navigation">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                        <span class="ion-navicon"></span>
+                                    </button>
+
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="discover.html">Discover</a></li>
+                                            <li><a href="describe.html">Describe</a></li>
+                                            <li><a href="do.html">Do</a></li>
+                                            <li><a href="teach.html">Teach</a></li>
+                                            <li><a href="community.html">Community</a></li>
+                                        </ul>
+                                    </div><!-- /.navbar-collapse -->
+                                </nav>
+                            </div>
+                        </div>  <!-- row -->
+                    </div>
+                </header>   <!-- site header -->
+            </section>
+
+            <section>
+            	<div class="container">
+            		<div class="row">
+            			<div class="col-md-12">
+            				<h1 class="main-page-header">Events</h1>
+            			</div>
+            		</div><!-- row -->
+            		<div class="row">
+            			<div class="col-md-12">
+                            <div id="events">Loading events...</div>
+            			</div>
+            		</div>
+            	</div>
+            </section>
+
+            <footer class="site-footer">
+                <div>
+                    <ul class="list-inline quicklinks">
+                    <li>Copyright &copy; ReproNim 2016-2017</div>
+                    <li>Support: <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8999833">NIH-NIBIB P41 EB019936</a></li>
+                    <li>Site theme: themewagon.com</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>  <!-- wrapper -->
+
+        <!-- js -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="js/events.js"></script>
+        <script type="text/javascript">
+            load_events();
+        </script>
+    </body>
+</html>

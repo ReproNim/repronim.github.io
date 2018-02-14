@@ -354,3 +354,14 @@ label span {
 	letter-spacing: 2px;
 	font-size: 13px;
 }
+
+#events {
+}
+
+#more_events {
+    margin-bottom: 1em;
+}
+
+.event {
+    margin-bottom: 0.5em;
+}
