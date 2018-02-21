@@ -359,9 +359,11 @@ label span {
 }
 
 #more_events {
-    margin-bottom: 1em;
+    font-size: 18px;
+    margin: 1em 0;
 }
 
 .event {
+    font-size: 18px;
     margin-bottom: 0.5em;
 }
