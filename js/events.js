@@ -28,9 +28,9 @@ function load_events(n=null) {
     }
 
     if(n === null) {
-        url = "/events_feed";
+        url = "http://dev.reproducibleimaging.org/events_feed";
     } else {
-        url = "/events_feed?n=" + n;
+        url = "http://dev.reproducibleimaging.org/events_feed?n=" + n;
     }
     req.open("GET", url, true);
     req.send();
