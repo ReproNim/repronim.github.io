@@ -52,16 +52,143 @@
             		<div class="row">
             			<div class="col-md-12">
             				<h1 class="main-page-header">Describe</h1>
-            				<h3 class="main-sub-header">Plan ahead!</h3>
+            				<h3 class="main-sub-header">Enable reproducibility by design!</h3>
             			</div>
-            		</div><!-- row -->
+            		</div>
             		<div class="row">
             			<div class="col-md-12">
-                            <p>This is the TR&amp;D 2 page.</p>
+                            <p>To provide the tools necessary for reproducible analyses. The analyses must
+                                also generate queryable, machine-readable data and results using
+                                interoperable and standardized data models. We aim to:
+                            </p>
+                            <ul>
+                                <li>Design interoperable Data Models, Workflows and Linked Results</li>
+                                <li>Create reusable workflows with provenance</li>
+                                <li>Test computational reproducibility and robustness.</li>
+                                <li>Integrate tools in Brainverse</li>
+                            </ul>
+                            <p>Neuroimaging data have become richer, with larger cohorts of participants,
+                                and a greater variety of acquisitions. A large number of useful analysis
+                                methods are now available, and many pipeline tools make such analysis
+                                efficient.
+                            </p>
+                            <ul>
+                                <li>Interpreting and comparing scientific results and enabling reusable analysis require understanding provenance, i.e. how the data were generated and processed.</li>
+                                <li>To be useful, the provenance must be understandable, easily communicated, and captured automatically in machine accessible form.</li>
+                                <li>The NIDM model specification captures data, analyses details across software and workflow tools, and results. </li>
+                            </ul>
+                            <p>Currently we are focused on the following projects. You can help us by trying them, contributing to them, or by sharing your ideas on how to improve them.</p>
             			</div>
             		</div>
             	</div>
             </section>
+
+            <section class="section-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3><a href="http://nidm.nidash.org">NIDM</a></h3>
+<p>
+    Describe experiment setup and data, analysis details, and results in a structured manner.
+    This is a collaboration with the Neuroimaging Data Sharing Working group, to develop
+    and maintain data models and software to support rich and structured description
+    of research workflows.
+</p>
+
+<ul>
+    <li>To create and support a community using standards</li>
+    <li>Tools to help researchers describe their data, software, and results</li>
+    <li>Tools to help developers integrate structured description into software</li>
+</ul>
+
+<p>
+    These tools will include publishing, visualizing, and validating data
+    described using NIDM. It will enable interoperability with existing efforts
+    (e.g., BIDS, DataLad, Nipype).
+    <a href="http://doi.org/10.5334/dsj-2017-045">Example: Keator et al., 2017</a>
+</p>
+<ul>
+    <li><a href="github.com/incf-nidash/PyNIDM">Python-based API</a> following the
+        simple organizational structure of NIDM-Experiment documents.
+        Functions to create, query, export, import, and transform NIDM documents.
+    </li>
+    <li>
+        <b>NIDM Terminology / Ontology: </b> NIDM ontology reuses existing terms from
+        several other where appropriate definitions exist. Current work is focused on
+        data descriptions, DICOM ontology, and a scientific workflow ontology.
+    </li>
+</ul>
+
+
+
+<!--
+                            <p><a href="discover.html">Read more.</a></p>
+-->
+                        </div>
+                        <div class="col-sm-4">
+                            <h3><a href="https://github.com/ReproNim/brainverse">BrainVerse</a></h3>
+
+<p>ReproNim is developing <strong>BrainVerse</strong> to help researchers manage, track
+    and share information in a comprehensive format. Brainverse is an open-source,
+    cross-platform desktop application to enable researchers add to reproducible
+    practices into every project.
+</p>
+
+<ul>
+    <li>An electronic laboratory notebook built as a cross platform desktop application</li>
+    <li>Enables users to plan experiments, collect, analyze and reuse data, and collaborate</li>
+    <li>Adds semantic annotation to data with relevant metadata based on NeuroImaging data Model
+        (NIDM) making experimental neuroimaging study more reproducible, and making data FAIR</li>
+    <li>Intercept the research workflow at planning stage, curating (raw, processed, results)
+        data at the source and helping users to annotate every step of the process.</li>
+</ul>
+
+<p>We are looking for beta users of the software and JavaScript developers to
+    extend BrainVerse.
+</p>
+
+<!--
+                            <p><a href="describe.html">Read more.</a></p>
+-->
+                        </div>
+                        <div class="col-sm-4">
+                            <h3><a href="https://github.com/ReproNim/regtests">Testkraut</a></h3>
+
+
+<p>Create a comprehensive framework for robustness testing. This will enable continuous
+    evaluation of algorithms under different operating system environments. Neuroimaging
+    relies on numerical computations and results can depend on:
+    <ul>
+       <li>workflow used by scientist</li>
+       <li>data used as input</li>
+       <li>external software used in the analysis</li>
+       <li>computational environment</li>
+     </ul>
+</p>
+<p>
+    Testing analysis in various computational environments allows to:
+    <ul>
+       <li>learn about the analysis limitations</li>
+       <li>increase confidence in the analysis before publishing the results</li>
+       <li>check the results obtained using a newer versions of external software</li>
+        <li>or computational environment any time after publishing</li>
+    </ul>
+</p>
+
+<p>
+ReproNim's Testkraut implementation will allow researchers to continuously evaluate
+    the performance of algorithms developed in the community and to choose the most
+    appropriate tools for a given analysis task.
+</p>
+
+<!--
+                            <p><a href="do.html">Read more.</a></p>
+-->
+                        </div>
+                    </div>  <!-- row -->
+
+                </div>
+            </section>  <!-- section-2 -->
 
             <footer class="site-footer">
                 <div>
