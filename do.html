@@ -50,25 +50,125 @@
             </section>
 
             <section>
-            	<div class="container">
-            		<div class="row">
-            			<div class="col-md-12">
-            				<h1 class="main-page-header">Do</h1>
-            				<h3 class="main-sub-header">What are you waiting for?</h3>
-            			</div>
-            		</div><!-- row -->
-            		<div class="row">
-            			<div class="col-md-12">
-                            <p>This is the TR&amp;D 3 page.</p>
-            			</div>
-            		</div>
-            	</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="main-page-header">Do</h1>
+                            <h3 class="main-sub-header">What are you waiting for? Just <strong>Do</strong> it -- Embrace reproducibility from the get-go</h3>
+                        </div>
+                    </div><!-- row -->
+                    <div class="row">
+                      <div class="col-md-12">
+<p>Our computational environments and infrastructure grow more
+powerful, more heterogeneous, and more complicated.  Reproducibility
+can be improved through practices and tools which establish efficient
+management of data, analyses scripts, and facilitation of analysis
+execution in a fashion that they could later be inspected, compared,
+validated, adjusted or expanded, and re-executed.  To have the most of
+effect such solutions should consider all stages of the scientific
+process, from the experiment planing and data collection, to
+  publication of the findings. We aim to</p>
+
+ </p>
+                        </div>
+                    </div>
+                </div>
             </section>
+
+            <section class="section-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3><a href="http://github.com/repronim/reproin">ReproIn</a></h3>
+<p>
+  Collect and prepare neuroimaging data in an efficient and automated
+  way to immediately benefit from the established by the community
+  standard --
+  <a href="http://bids.neuroimaging.io">Brain Imaging Data Structure
+  (BIDS)</a> -- and <a href="http://datalad.org">Distributed data
+  distribution and management system DataLad</a>. To achieve that we
+</p>
+
+<ul>
+    <li>establish a <a href="https://github.com/nipy/heudiconv/blob/master/heudiconv/heuristics/reproin.py">specification</a>
+    and <a href="https://github.com/ReproNim/reproin/blob/master/docs/walkthrough-1.md">procedures</a>
+    for MRI scanning sessions to allow for flexible, automated, and
+    non-ambiguous conversion of all acquired MR data from DICOM files
+    to BIDS dataset(s)</li>
+
+    <li>contribute to the development of
+    the <a href="http://github.com/nipy/heudiconv">Heuristic DICOM
+    Converter (HeuDiConv)</a> utility to perform the conversion and
+    version control of all data using DataLad</li>
+
+    <li>assure robust operation, wide dissemination, and detailed
+    documentation for the project to ease adoption</li>
+</ul>
+
+<p>
+  Having all collected data automatically converted to BIDS, while
+  retaining all original DICOMs as well, makes it possible to
+</p>
+<ul>
+  <li>
+	validate correct data collection by using
+    the <a href="https://github.com/INCF/bids-validator">BIDS-validator</a>
+    and detect possible problems with the design or acquisition in
+    early (pilot) stages of the project
+  </li>
+  <li>
+	avoid many common mistakes stemming from manual data conversion
+	and curation, thus making input data itself validated and
+	reproducible
+  <li>
+    automatically reconvert all data in case if relevant defects get
+    detected in the conversion backend utility, possibly again to
+    reconfirm reproducibility of the data itself
+  </li>
+  <li>
+  </li>
+  <li>
+	facilitate data sharing (private or public) and publication (data
+	descriptor papers) since all data is immediate almost completely
+	ready for sharing in a standardized files layout and annotation
+  </li>
+</ul>
+
+                        </div>
+                        <div class="col-sm-8">
+                            <h3><a href="https://github.com/ReproNim/NICEMAN">NICEMAN</a></h3>
+
+<p>ReproNim is developing <strong>NICEMAN</strong> to help researchers manage, track
+    and share information in a comprehensive format. Brainverse is an open-source,
+    cross-platform desktop application to enable researchers add to reproducible
+    practices into every project.
+</p>
+<div class="col-sm-6">
+<ul>
+    <li>An electronic laboratory notebook built as a cross platform desktop application</li>
+    <li>Enables users to plan experiments, collect, analyze and reuse data, and collaborate</li>
+    <li>Adds semantic annotation to data with relevant metadata based on NeuroImaging data Model
+        (NIDM) making experimental neuroimaging study more reproducible, and making data FAIR</li>
+    <li>Intercept the research workflow at planning stage, curating (raw, processed, results)
+        data at the source and helping users to annotate every step of the process.</li>
+</ul>
+</div>
+
+<div class="col-sm-6">
+<p>We are looking for beta users of the software and JavaScript developers to
+    extend BrainVerse.
+</p>
+</div>
+                        </div>
+                    </div>  <!-- row -->
+
+                </div>
+            </section>  <!-- section-2 -->
 
             <footer class="site-footer">
                 <div>
                     <ul class="list-inline quicklinks">
-                    <li>Copyright &copy; ReproNim 2016-2017</div>
+                    <li>Copyright &copy; ReproNim 2016-2018</div>
                     <li>Support: <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=8999833">NIH-NIBIB P41 EB019936</a></li>
                     <li>Site theme: themewagon.com</li>
                     </ul>
