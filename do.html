@@ -74,7 +74,7 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 <ul>
   <li>data conversion with minimal manual effort while establishing
     data provenance from the moment data are collected</li>
-  <li>collection and analysis of data provenance at any step of the
+  <li>collection and analysis of data provenance throughout different steps of
     the scientific process</li>
   <li>(re)execution of (previous) analyses in scalable and flexible
   manner while gaining advantage of existing infrastructure and new
@@ -83,15 +83,17 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 <p>
   We strongly believe in the benefits of modular design,
   collaboration, and re-use. That is why instead of developing a
-  single monolithic platform to "solve all the problems", we are
-  trying to reuse and contribute as much as possible to existing
-  projects. To that end, in the scope of this project we actively
-  maintain relevant software
-  within <a href="http://neuro.debian.net">NeuroDebian</a> turnkey
-  platform, so you could benefit from new solutions such
-  as <a href="http://singularity.lbl.gov">Singularity</a> to make your
-  research more flexible and reproducible. With our developments we
-  aim to provide you with a collection of tools useful on their own
+  single monolithic platform to "solve all the problems", we are as
+  much as possible reuse and contribute to existing projects. To that
+  end, in the scope of this project we actively maintain relevant
+  software within <a href="http://neuro.debian.net">NeuroDebian</a>,
+  so that ReproNim and other projects could benefit from this turnkey
+  platform.  We also provided official Debian packaging and assist in
+  maintaining
+  <a href="http://singularity.lbl.gov">Singularity</a> "scientific
+  containerization" platform to make your research more flexible and
+  reproducible. With our ongoing software and platforms developments
+  we aim to provide you with a collection of tools useful on their own
   even if you do not want to establish the full recommended chain of
   products.
 </p>
@@ -110,7 +112,7 @@ reproducibility of their results by <strong>Do</strong>ing</p>
             <section class="section-3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <h3><a href="http://github.com/repronim/reproin">ReproIn</a></h3>
 <p>
   Collect and prepare neuroimaging data in an efficient and automated
@@ -166,68 +168,126 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 	ready for sharing in a standardized files layout and annotation.
   </li>
 </ul>
+
+<p>Visit <a href="http://reproin.repronim.org">reproin.repronim.org</a>
+  for more information.</p>
+
 <p>
-  Having all data under DataLad distributed version control makes it
-  possible to
+  ReproIn will
+  be <a href="https://ww5.aievolution.com/hbm1801/index.cfm?do=ev.viewEv&ev=1379">presented
+  at OHBM 2018 (#2097 talk at Tue, June 19 10:30-10:42, "Informatics"
+  session; poster TBA).
+</p>.
+</div>
+
+						<div class="col-sm-4">
+<h3><a href="https://github.com/myyoda">YODA</a> Principles</h3>
+
+<p>YODA (YODA’s organigram on data analysis) is a an advisory for
+  use of version control systems such as
+  <a href="http://git-scm.org">git</a>,
+  <a href="http://git-annex.branchable.com">git-annex</a>,
+  and <a href="http://datalad.org">DataLad</a> in a modular fashion to
+  cover the entire life-span of a research project with reliable,
+  non-ambiguous tracking and orchestration of all digital products of
+  a study (e.g., inputs, code, outputs). Modularization facilitates
+  their independent re-use (e.g., the same data used across multiple
+  studies; versions of a software library used repeatedly), and
+  scaling to dataset sizes found in cutting edge high-resolution
+  neuroimaging research.</p>
+
+<p>
+  In the scope of the ReproIn project, having all data collected as
+  DataLad datasets makes it possible to
 </p>
 <ul>
   <li>
 	start changing and enriching BIDS dataset with information not
-	available during scanning (condition onsets, dataset metadata in
-	README etc), while allowing for subsequent updates and merges with
-	new data coming from the scanner using standard git mechanisms
+	available during scanning (condition onsets, dataset metadata,
+	etc.), while allowing for subsequent updates and merges with new
+	data coming from the scanner using standard git mechanisms
   </li>
   <li>
 	distribute data for curation and processing across available
 	infrastructure while relying on git-annex to maintain information
 	about data availability, and git providing clear information about
-	dataset version(s).
+	dataset version(s)
   </li>
   <li>
-    annotate sensitive data files with metadata to automatically
-    restrict their public sharing (e.g. original DICOMs, non-defaced anatomicals)
+	annotate sensitive data files with metadata to automatically
+	restrict their public sharing (e.g. original DICOMs, non-defaced anatomicals).
   </li>
 </ul>
 
-<p>Visit <a href="http://reproin.repronim.org">reproin.repronim.org</a> for more information</p>.
-</div>
+<p>We also extend and contribute new functionality
+  to <a href="http://datalad.org">DataLad</a> to facilitate
+  VCS-enabled provenance tracing of execution and results:
+	<ul>
+	  <li>
+		<strong><a href="http://docs.datalad.org/en/latest/cmdline.html#reproducible-execution">run/rerun</a></strong>
+	  see <a href="http://docs.datalad.org/en/latest/usecases/simple_provenance_tracking.html">DataLad
+	  documentation on provenance tracking</a>
+	  </li>
+	  <li>
+		<strong><a href="http://docs.datalad.org/en/latest/generated/man/datalad-addurls.html">addurls</a></strong>
+		to produce DataLad dataset(s) from a set of structured data as
+		in the <a href="https://github.com/ReproNim/simple_workflow">Simple
+		Workflow</a> papers.</li>
+	</ul>
+  </li>
+</ul>
+<p>
+  You can adhere to TODA principles by making a better use of VCS in
+  your research projects. Visit and contribute to
+  our <a href="http://www.reproducibleimaging.org/module-reproducible-basics/02-vcs/">training
+  materials</a> and <a href="https://github.com/myyoda/template">YODA
+  template</a> repository.</p>
+<p>
+  YODA will have a poster presentation at OHBM 2018 (Time TBA).
+</p>
+                        </div>
 
-<div class="col-sm-6">
+						<div class="col-sm-4">
 <h3><a href="https://github.com/ReproNim/NICEMAN">NICEMAN</a></h3>
 
 <p>Neuroimaging Computation Environments Manager
-  (<a href="http://niceman.repronim.org">NICEMAN</a>) intends to help
-  researchers track and manage computation resources they have
-  available and use, in a reproducible and scalable way.</p>
+  (<a href="http://niceman.repronim.org">NICEMAN</a>) is being
+  developed to help researchers track and manage computation resources
+  they have available and use in a reproducible and scalable way. We
+  aim NICEMAN to</p>
 <ul>
-    <li>Collection of information about used resources:
-      software packages (Debian, Conda, pip), VCS repositories (git,
-      svn), containers (docker, singularity), etc., possibly enriching
-      already collected provenance information (e.g., obtained
+    <li>collect information about used resources: software packages
+      (Debian, Conda, pip), VCS repositories (git, svn), containers
+      (docker, singularity), etc., possibly enriching already
+      collected provenance information (e.g., obtained
       from <a href="http://www.reproducibleimaging.org/describe.html">BrainVerse</a>,
 	  <a href="http://reprozip.org">ReproZip</a>, or workflow
       engines).  We make accent on collecting an exhaustive amount of
       information so it could be sufficient to later automatically
       re-instantiate necessary components given just a
       specification.</li>
-    <li>Analyze collected information to be able to answer questions:
+    <li>analyze collected information to answer questions:
 	  <ul>
-		<li>Am I using the same software as in the original analysis?
-		<li>What has changed?
-		<li>Does a given environment satisfy necessary requirements?
+		<li>"Am I using the same software as in the original analysis?"
+		<li>"What has changed?"
+		<li>"Does a given environment satisfy necessary requirements?"
 	  </ul>
 	</li>
-    <li>When possible adjust any given computational environment to
+    <li>(when feasible) adjust any given computational environment to
         satisfy specified requirements, or just repopulate a new
         (docker, singularity, etc) container which would.</li>
-    <li>Provide uniform interface to a variety of computational
+    <li>provide uniform interface to a variety of computational
         environments (containers, cloud, etc.) for interactive
         sessions and scheduling of computational tasks while allowing
         for tracing of computational resources used by the
         computation.</li>
 </ul>
 
-<p>Visit <a href="http://reproin.repronim.org">reproin.repronim.org</a> for more information</p>.
+<p>Visit <a href="http://reproin.repronim.org">reproin.repronim.org</a> for more information.</p>
+
+<p>
+  NICEMAN will have a poster presentation at OHBM 2018 (Time TBA).
+</p>
 
                         </div>
                     </div>  <!-- row -->
