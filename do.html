@@ -54,54 +54,53 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 class="main-page-header">Do</h1>
-                            <h3 class="main-sub-header">What are you waiting for?<br> Just <strong>Do</strong> it -- Embrace reproducibility from the get-go</h3>
+                            <h3 class="main-sub-header">What are you waiting for?<br> Just <strong>Do</strong> it&mdash;Embrace reproducibility from the get-go</h3>
                         </div>
                     </div><!-- row -->
                     <div class="row">
                       <div class="col-md-12">
-<p>Our computational environments and infrastructure grow more
-powerful, more heterogeneous, and more complicated.  Reproducibility
-can be improved through practices and tools which establish efficient
-management of data and scripts which also keep the history and details
-of changes, and facilitation of analysis execution in a fashion that
-they could later be inspected, compared, validated, adjusted or
-expanded, and re-executed.
-<br>To become most effective, such solutions
-should consider all stages of the scientific process, from the
-experiment planing and data collection, to publication of the
-findings. We aim to assist neuroimaging community to improve
-reproducibility of their results by <strong>Do</strong>ing</p>
+<p>Our computational environments and infrastructure are growing more
+powerful, more heterogeneous, and more complicated. Reproducibility
+can be improved through practices and tools that 1) enable efficient
+management of data and scripts while capturing the history and details
+of changes and 2) facilitate executing analyses in a fashion that
+supports inspection, comparison, validation, modification, and
+re-execution.
+<br>To become most effective, such solutions should consider all
+stages of the scientific process, from planning the experiment and
+collecting data to publishing the findings. We aim to assist the
+neuroimaging community in improving reproducibility of their results
+by <strong>Do</strong>ing</p>
 <ul>
   <li>data conversion with minimal manual effort while establishing
     data provenance from the moment data are collected</li>
   <li>collection and analysis of data provenance throughout different steps of
     the scientific process</li>
-  <li>(re)execution of (previous) analyses in scalable and flexible
-  manner while gaining advantage of existing infrastructure and new
+  <li>(re)execution of (previous) analyses in a scalable and flexible
+  manner by taking advantage of both existing infrastructure and new
   technologies.</li>
 </ul>
 <p>
   We strongly believe in the benefits of modular design,
-  collaboration, and re-use. That is why instead of developing a
-  single monolithic platform to "solve all the problems", we are as
-  much as possible reuse and contribute to existing projects. To that
-  end, in the scope of this project we actively maintain relevant
-  software within <a href="http://neuro.debian.net">NeuroDebian</a>,
-  so that ReproNim and other projects could benefit from this turnkey
-  platform.  We also provided official Debian packaging and assist in
-  maintaining
+  collaboration, and re-use. That is why, instead of developing a
+  single monolithic platform to "solve all the problems", we are
+  reusing and contributing to existing projects as much as possible.
+  To that end, in the scope of this project, we actively maintain
+  relevant software
+  within <a href="http://neuro.debian.net">NeuroDebian</a> so that
+  ReproNim and other projects can benefit from this turnkey
+  platform. We also provided official Debian packaging for
   <a href="http://singularity.lbl.gov">Singularity</a> "scientific
   containerization" platform to make your research more flexible and
-  reproducible. With our ongoing software and platforms developments
-  we aim to provide you with a collection of tools useful on their own
-  even if you do not want to establish the full recommended chain of
-  products.
+  reproducible. With our ongoing software and platform development, we
+  aim to provide you with a collection of tools that are useful on
+  their own even if you choose not to use the full suite of products.
 </p>
 <p>
   Currently we are focused on the following projects. You can help us
   by trying and starting to use them, contributing, or by sharing your
-  ideas on how to improve them.  Only with your feedback (positive or
-  negative) we could make our projects most beneficial
+  ideas on how to improve them. We need your feedback (positive or
+  negative) to make our projects most beneficial
   for <strong>your</strong> research.
 </p>
                         </div>
@@ -117,9 +116,10 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 <p>
   Collect and prepare neuroimaging data in an efficient and automated
   way to immediately benefit from the established community
-  standard <a href="http://bids.neuroimaging.io">Brain Imaging Data Structure
-  (BIDS)</a>, and a <a href="http://datalad.org">Distributed data
-  distribution and management system DataLad</a>. To achieve that we
+  standard <a href="http://bids.neuroimaging.io">Brain Imaging Data
+  Structure (BIDS)</a> and <a href="http://datalad.org">DataLad</a>, a
+  distributed data distribution and management system. To achieve that
+  we
 </p>
 
 <ul>
@@ -140,8 +140,8 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 </ul>
 
 <p>
-  Having all collected data automatically converted to BIDS, while
-  retaining all original DICOMs as well with clear association between
+  Automcatically converting all collected data to BIDS, while
+  retaining all original DICOMs as well a clear association between
   raw and converted data, makes it possible to
 </p>
 <ul>
@@ -153,10 +153,10 @@ reproducibility of their results by <strong>Do</strong>ing</p>
     stages of a project and avoid many common mistakes stemming from
     manual data conversion and curation
   <li>
-    automatically reconvert all collected data in case if relevant
-    defects get detected in the conversion backend utility, or
-    additional metadata stored in DICOMs found to be necessary, or
-    possibly again to reconfirm reproducibility of the data itself
+    automatically reconvert all collected data if relevant
+    defects get detected in the conversion backend utility,
+    if additional metadata stored in DICOMs is found to be necessary, or
+    in order to confirm the reproducibility of the data itself
   </li>
   <li>
     make it possible to start data analysis immediately after
@@ -164,8 +164,8 @@ reproducibility of their results by <strong>Do</strong>ing</p>
   </li>
   <li>
 	facilitate data sharing (private or public) and publication (data
-	descriptor papers) since all data is immediate almost completely
-	ready for sharing in a standardized files layout and annotation.
+	descriptor papers) since all data is immediately almost completely
+	ready for sharing with a standardized file layout and annotation.
   </li>
 </ul>
 
@@ -183,18 +183,18 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 						<div class="col-sm-4">
 <h3><a href="https://github.com/myyoda">YODA</a> Principles</h3>
 
-<p>YODA (YODA’s organigram on data analysis) is a an advisory for
-  use of version control systems such as
+<p>YODA (YODA’s organigram on data analysis) outlines an approach for
+  using version control systems such as
   <a href="http://git-scm.org">git</a>,
   <a href="http://git-annex.branchable.com">git-annex</a>,
   and <a href="http://datalad.org">DataLad</a> in a modular fashion to
   cover the entire life-span of a research project with reliable,
   non-ambiguous tracking and orchestration of all digital products of
   a study (e.g., inputs, code, outputs). Modularization facilitates
-  their independent re-use (e.g., the same data used across multiple
-  studies; versions of a software library used repeatedly), and
-  scaling to dataset sizes found in cutting edge high-resolution
-  neuroimaging research.</p>
+  the independent re-use of parts (e.g., the same data used across
+  multiple studies, versions of a software library used repeatedly) in
+  a manner that scales to dataset sizes found in cutting edge
+  high-resolution neuroimaging research.</p>
 
 <p>
   In the scope of the ReproIn project, having all data collected as
@@ -204,13 +204,13 @@ reproducibility of their results by <strong>Do</strong>ing</p>
   <li>
 	start changing and enriching BIDS dataset with information not
 	available during scanning (condition onsets, dataset metadata,
-	etc.), while allowing for subsequent updates and merges with new
-	data coming from the scanner using standard git mechanisms
+	etc.) while allowing for subsequent updates and merges with new
+	data coming from the scanner using standard Git mechanisms
   </li>
   <li>
 	distribute data for curation and processing across available
 	infrastructure while relying on git-annex to maintain information
-	about data availability, and git providing clear information about
+	about data availability, and Git providing clear information about
 	dataset version(s)
   </li>
   <li>
@@ -225,8 +225,8 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 	<ul>
 	  <li>
 		<strong><a href="http://docs.datalad.org/en/latest/cmdline.html#reproducible-execution">run/rerun</a></strong>
-	  see <a href="http://docs.datalad.org/en/latest/usecases/simple_provenance_tracking.html">DataLad
-	  documentation on provenance tracking</a>
+	  (see <a href="http://docs.datalad.org/en/latest/usecases/simple_provenance_tracking.html">DataLad
+	  documentation on provenance tracking</a>)
 	  </li>
 	  <li>
 		<strong><a href="http://docs.datalad.org/en/latest/generated/man/datalad-addurls.html">addurls</a></strong>
@@ -237,13 +237,13 @@ reproducibility of their results by <strong>Do</strong>ing</p>
   </li>
 </ul>
 <p>
-  You can adhere to TODA principles by making a better use of VCS in
+  You can adhere to YODA principles by making a better use of VCS in
   your research projects. Visit and contribute to
   our <a href="http://www.reproducibleimaging.org/module-reproducible-basics/02-vcs/">training
   materials</a> and <a href="https://github.com/myyoda/template">YODA
   template</a> repository.</p>
 <p>
-  YODA will have a poster presentation at OHBM 2018 (Time TBA).
+  A poster presentation at OHBM 2018 (Time TBA), YODA will have.
 </p>
                         </div>
 
@@ -253,30 +253,30 @@ reproducibility of their results by <strong>Do</strong>ing</p>
 <p>Neuroimaging Computation Environments Manager
   (<a href="http://niceman.repronim.org">NICEMAN</a>) is being
   developed to help researchers track and manage computation resources
-  they have available and use in a reproducible and scalable way. We
-  aim NICEMAN to</p>
+  that they have available and to use them in a reproducible and
+  scalable way. We aim for NICEMAN to</p>
 <ul>
-    <li>collect information about used resources: software packages
-      (Debian, Conda, pip), VCS repositories (git, svn), containers
-      (docker, singularity), etc., possibly enriching already
+    <li>collect information about used resources&mdash;such as software packages
+      (Debian, Conda, pip), VCS repositories (Git, SVN), containers
+      (Docker, Singularity)&mdash;possibly enriching already
       collected provenance information (e.g., obtained
       from <a href="http://www.reproducibleimaging.org/describe.html">BrainVerse</a>,
 	  <a href="http://reprozip.org">ReproZip</a>, or workflow
-      engines).  We make accent on collecting an exhaustive amount of
+      engines).  We emphasize collecting an exhaustive amount of
       information so it could be sufficient to later automatically
       re-instantiate necessary components given just a
       specification.</li>
-    <li>analyze collected information to answer questions:
+    <li>analyze collected information to answer questions like
 	  <ul>
 		<li>"Am I using the same software as in the original analysis?"
 		<li>"What has changed?"
-		<li>"Does a given environment satisfy necessary requirements?"
+		<li>"Does a given environment satisfy the necessary requirements?"
 	  </ul>
 	</li>
     <li>(when feasible) adjust any given computational environment to
-        satisfy specified requirements, or just repopulate a new
-        (docker, singularity, etc) container which would.</li>
-    <li>provide uniform interface to a variety of computational
+        satisfy the specified requirements, or just repopulate a new
+      (Docker, Singularity, etc.) container which would.</li>
+    <li>provide a uniform interface to a variety of computational
         environments (containers, cloud, etc.) for interactive
         sessions and scheduling of computational tasks while allowing
         for tracing of computational resources used by the
