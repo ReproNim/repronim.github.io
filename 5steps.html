@@ -31,7 +31,7 @@
                                     </button>
 
                                     <!-- Collect the nav links, forms, and other content for toggling -->
-<!--
+
                                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                         <ul class="nav navbar-nav">
                                             <li><a href="discover.html">Discover</a></li>
@@ -41,7 +41,7 @@
                                             <li><a href="community.html">Community</a></li>
                                         </ul>
                                     </div>
--->
+
                                 </nav>
                             </div>
                         </div>  <!-- row -->
@@ -60,20 +60,26 @@ See this <a href="https://docs.google.com/document/d/1i2DVI1b4fBJuLAjKRcjPE6oV82
             			</div>
 				<div class="col-md-12">
 <p>
-Going whole hog into completely reproducible neuroimaging is hard. But, there are lots of little things you can do today to increase the reproducibility of your current studies.
+Going whole-hog into completely reproducible neuroimaging is hard. But, there are lots of little things you can do today to increase the reproducibility of your current studies.
 </p>
-					<h2 style="background-color:#f6f945">Study Design</h2>
+<table style="width:100%;background-color:#f6f945;font-size:30px">
+  <tr>
+    <td><b>Study Design</b></td>
+    <td style="text-align:right"><a href="http://repronim.org/5Steps/design">repronim.org/5Steps/design</a></td>
+  </tr>
+</table>
+	<!--				<h2 style="background-color:#f6f945">Study Design</h2> -->
 <p>
 <ul type="square">
-<li>Build data shareability into the consent process
-<li>Plan your study with a RoadMap
-<li>Pre-register your study
+<li>Build data shareability into the consent process - see <a href="http://open-brain-consent.readthedocs.io">Open Brain Consent</a>, for example.
+<li>Plan your study with a RoadMap - see, for example, <a href="http://brainverse.repronim.org">BrainVerse</a>.
+<li>Pre-register your study - at, for example, <a href="http://osf.io">Open Science Foundation</a>.
 </ul>
 </p>
-<table style="width:100%;background-color:#3ffff5;">
+<table style="width:100%;background-color:#3ffff5;font-size:30px">
   <tr>
-    <td>Data Collection</td>
-    <td style="text-align:right">URL</td>
+    <td><b>Data Collection</b></td>
+    <td style="text-align:right"><a href="http://repronim.org/5Steps/acquisition">repronim.org/5Steps/acquisition</a></td>
   </tr>
 </table>
 
@@ -82,38 +88,53 @@ Going whole hog into completely reproducible neuroimaging is hard. But, there ar
 					<!-- <h2 >URL</h2> -->
 <p>
 <ul type="square">
-<li>Adopt standards-based data representation from the get go
-<ul type="square">
-<li>Use ReproBIDS for your imaging data
-<li>Annotate your metadata as you collect it2
-</ul>
-<li>Use ReproIn to automate conversion to BIDS
-<li>Use a version control system for all files (data, code, environments, etc.)
+<li>Adopt standards-based data representation from the get go.
+<li>Use <a href="http://reproin.repronim.org">ReproIn</a> to automate conversion of your imaging data to <a href="http://bids.neuroimaging.io">BIDS</a>.
+<li>Annotate your metadata (all experimental details) as you collect it - see, for example, <a href="http://brainverse.repronim.org">BrainVerse</a>.
+<li>Use a version control system for all files (data, code, environments, etc.) - i.e. <a href="http://datalad.org">DataLad</a>.
 </ul>
 </p>
-					<h2 style="background-color:#b498d1">Data Processing</h2>
+<table style="width:100%;background-color:#b498d1;font-size:30px">
+  <tr>
+    <td><b>Data Processing</b></td>
+    <td style="text-align:right"><a href="http://repronim.org/5Steps/analysis">repronim.org/5Steps/analysis</a></td>
+  </tr>
+</table>
+	<!--				<h2 style="background-color:#b498d1">Data Processing</h2> -->
 <p>
 <ul type="square">
-<li>Document your software and computational environment
-<li>Use containerization/virtualization to encapsulate and share analysis workflow (Docker, Singularity, Virtual Machines, etc.)
-<li>Annotate your results
+<li>Document your software and computational environment - for example <a href="https://github.com/kaczmarj/neurodocker">NeuroDocker</a> and <a href="http://niceman.repronim.org">NiceMan</a>.
+<li>Use containerization/virtualization to encapsulate and share analysis workflow (<a href="http://docker.com">Docker</a>, <a href="https://www.sylabs.io/">Singularity</a>, <a href="https://www.virtualbox.org/">Virtual Machines</a>, etc.).
+<li>Annotate your results - using NeuroImaging Data Model (<a href="http://nidm.nidash.org">NIDM</a>), for example.
 </ul>
 </p>
-					<h2 style="background-color:#f3e0ff">Statistical Analysis</h2>
+<table style="width:100%;background-color:#f3e0ff;font-size:30px">
+  <tr>
+    <td><b>Statistical Analysis</b></td>
+    <td style="text-align:right"><a href="http://repronim.org/5Steps/wstats">repronim.org/5Steps/stats</a></td>
+  </tr>
+</table>
+	<!--				<h2 style="background-color:#f3e0ff">Statistical Analysis</h2> -->
 <p>
 <ul type="square">
-<li>Most studies are underpowered, combat this by sharing your data and reusing available data.: Understand:
+<li>Most studies are underpowered, combat this by sharing your data and reusing available data to enable creating larger data sets, thereby increasing study power. Understand:
 <ul type="square">
-<li>Effect size, confidence intervals, power, positive predictive value and significance testing
+<li>Effect size, confidence intervals, power, positive predictive value and significance testing - some training materials can be found <a href="http://www.reproducibleimaging.org/module-stats/">here</a>.
 </ul>
 </ul>
 </p>
-					<h2 style="background-color:#ffe09e">Publication Content</h2>
+<table style="width:100%;background-color:#ffe09e;font-size:30px">
+  <tr>
+    <td><b>Publication</b></td>
+    <td style="text-align:right"><a href="http://repronim.org/5Steps/publish">repronim.org/5Steps/publish</a></td>
+  </tr>
+</table>
+		<!--			<h2 style="background-color:#ffe09e">Publication Content</h2> -->
 <p>
 <ul type="square">
-<li>Include the anonymized raw data and workflow used 
+<li>Include the anonymized raw data and workflow used - using resources such as <a href="https://zenodo.org/">zenodo</a>, etc.
 <li>Include complete processed results 
-<li>Make it Findable, Accessible, Interoperable and Reusable (FAIR)
+<li>Make it Findable, Accessible, Interoperable and Reusable (<a href="https://www.go-fair.org/fair-principles/">FAIR</a>)
 </ul>
 </p>
 				</div>
