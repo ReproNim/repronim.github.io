@@ -28,9 +28,9 @@ function load_events(n=null) {
     }
 
     if(n === null) {
-        url = "http://www.virtualbrain.org/events_feed";
+        url = "http://www.virtualbrain.org/events_feed/";
     } else {
-        url = "http://www.virtualbrain.org/events_feed?n=" + n;
+        url = "http://www.virtualbrain.org/events_feed/?n=" + n;
     }
     req.open("GET", url, true);
     req.send();
