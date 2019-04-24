@@ -369,3 +369,19 @@ label span {
     font-size: 18px;
     margin-bottom: 0.5em;
 }
+
+div.flanked-header {
+    padding: 20px 0;
+}
+
+div.flanked-header img {
+    padding-top: 0;
+}
+
+div.flanked-header :first-child img {
+    float: right;
+}
+
+div.flanked-header :last-child img {
+    float: left;
+}
