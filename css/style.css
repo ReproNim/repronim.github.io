@@ -378,10 +378,10 @@ div.flanked-header img {
     padding-top: 0;
 }
 
-div.flanked-header :first-child img {
+div.flanked-header :first-child a img {
     float: right;
 }
 
-div.flanked-header :last-child img {
+div.flanked-header :last-child a img {
     float: left;
 }
