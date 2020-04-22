@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132556733-1"></script>
         <script>
@@ -10,6 +9,17 @@
             gtag('js', new Date());
             gtag('config', 'UA-132556733-1');
         </script>
+      <script>
+        (function() {
+            var cx = '011585779972124617449:nhlyoiogpg7';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,27 +70,25 @@
             </section>
 
             <section>
-            	<div class="container">
-            		<div class="row">
-            			<div class="col-md-12">
-            				<h1 class="main-page-header">Search</h1>
-            			</div>
-            		</div><!-- row -->
-            		<div class="row">
-            			<div class="col-md-12">
-            			  <h2>this website:</h2>
-            			  <script async src="https://cse.google.com/cse.js?cx=011585779972124617449:lngfk9yjbrv"></script>
-            			  <div class="gcse-search"></div>
-            			</div>
-            		</div>
-            		<div class="row">
-            			<div class="col-md-12">
-            			  <h2>larger ReproNim ecosystem:</h2>
-            			  <script async src="https://cse.google.com/cse.js?cx=011585779972124617449:nhlyoiogpg7"></script>
-            			  <div class="gcse-search"></div>
-            			</div>
-            		</div>
-            	</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="main-page-header">Search</h1>
+                        </div>
+                    </div><!-- row -->
+                    <div class="row">
+                        <div class="col-md-12">
+                          <h2>this website:</h2>
+                          <gcse:search defaultToRefinement="main_website"></gcse:search>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                          <h2>larger ReproNim ecosystem:</h2>
+                          <gcse:search></gcse:search>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <footer class="site-footer">
