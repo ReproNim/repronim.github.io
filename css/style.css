@@ -186,6 +186,10 @@ margin-bottom: 50px;
 	background: #eef1f2;
 }
 
+.section-3 p,ul {
+    margin-right: 30px;
+}
+
 .section-header {
 font-weight: 100;
 font-size: 36px;
