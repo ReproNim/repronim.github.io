@@ -389,3 +389,36 @@ div.flanked-header :first-child a img {
 div.flanked-header :last-child a img {
     float: left;
 }
+
+div.logos {
+}
+
+div.logos div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logos-1 {
+    width: 880px;
+}
+
+.logos-2 {
+    width: 770px;
+}
+
+div.logos img {
+    margin: 10px;
+}
+
+.promo-text-2 {
+	font-weight: 300;
+	text-align: center;
+	margin: 0px 0 40px 0;
+	font-size: 54px;
+	letter-spacing: -1.5px;
+    color: #43b5e8;
+}
+
+.main-sub-header-2 {
+    margin-bottom: 2em;
+}
