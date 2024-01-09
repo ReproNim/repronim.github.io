@@ -422,3 +422,8 @@ div.logos img {
 .main-sub-header-2 {
     margin-bottom: 2em;
 }
+
+div.resource dl {
+    border: 1px solid #aaa;
+    padding: 10px;
+}
