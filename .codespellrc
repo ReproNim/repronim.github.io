@@ -2,5 +2,5 @@
 [codespell]
 skip = .git,*.pdf,*.svg,go.sum,*.css,*.min.*,.codespellrc
 check-hidden = true
-# ignore-regex = 
+ignore-regex = \b(TE|currentY|Lew)\b
 # ignore-words-list =
