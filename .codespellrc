@@ -3,4 +3,4 @@
 skip = .git,*.pdf,*.svg,go.sum,*.css,*.min.*,.codespellrc
 check-hidden = true
 ignore-regex = \b(TE|currentY|Lew|fnndsc.childrens.harvard.edu)\b
-# ignore-words-list =
+ignore-words-list = Foldes
